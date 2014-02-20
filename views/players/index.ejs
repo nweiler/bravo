@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Players</h1>
+    <p>Express stock photo application.</p>
+    <div id="players">
+      <% players.forEach(function(player) { %>
+        <div class="player">
+          <h2><%=player.name.first%></h2>
+        </div>
+      <% }) %>
+    </div>
+  </body>
+</html>
